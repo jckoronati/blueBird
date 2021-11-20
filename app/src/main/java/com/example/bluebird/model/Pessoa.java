@@ -21,8 +21,23 @@ public class Pessoa implements Serializable {
         this.renda = renda;
     }
 
-    //Implementar Getters e Setters
     public int getId() {
         return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNomeSocial() {
+        return nomeSocial;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public double getRenda() {
+        return renda;
     }
 }
