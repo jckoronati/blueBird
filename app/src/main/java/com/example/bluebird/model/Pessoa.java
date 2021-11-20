@@ -4,40 +4,40 @@ import java.io.Serializable;
 
 public class Pessoa implements Serializable {
     private int id;
-    private String nome;
-    private String nomeSocial;
-    private String genero;
-    private String pai;
-    private String mae;
-    private double renda;
+    private String name;
+    private String fantasyName;
+    private String gender;
+    private String father;
+    private String mother;
+    private double income;
 
-    public Pessoa(int id, String nome, String nomeSocial, String genero, String pai, String mae, double renda) {
+    public Pessoa(int id, String name, String fantasyName, String gender, String father, String mother, double income) {
         this.id = id;
-        this.nome = nome;
-        this.nomeSocial = nomeSocial;
-        this.genero = genero;
-        this.pai = pai;
-        this.mae = mae;
-        this.renda = renda;
+        this.name = name;
+        this.fantasyName = fantasyName;
+        this.gender = gender;
+        this.father = father;
+        this.mother = mother;
+        this.income = income;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public String getNomeSocial() {
-        return nomeSocial;
+    public String getFantasyName() {
+        return fantasyName;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getGender() {
+        return gender;
     }
 
-    public double getRenda() {
-        return renda;
+    public double getIncome() {
+        return income;
     }
 }

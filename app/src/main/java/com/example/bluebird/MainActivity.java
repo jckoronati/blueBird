@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +20,9 @@ public class MainActivity extends AppCompatActivity {
         btSign.setOnClickListener(new View.OnClickListener() {
             @Override
 
+            // Conectar com o banco e inserir dados no campo da tabela
             public void onClick(View view) {
-                //implementar método para conectar dados ao banco
+                //                EditText name
             }
         });
     }
