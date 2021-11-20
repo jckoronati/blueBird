@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Conectar com o banco e inserir dados no campo da tabela
             public void onClick(View view) {
-                //                EditText name
+                //                EditText name = (EditText) findViewById(R.id.edtName);
             }
         });
     }

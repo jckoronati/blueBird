@@ -8,18 +8,18 @@ import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "DBAgenda.db";
+    //Criar banco
+    private static final String DATABASE_NAME = "DBBlueBird.db";
     private static final int DATABASE_VERSION = 1;
-    //campo livre para o usuário informar seu género
-    private static final String CREATE_TABLE_SING = "CREATE TABLE AGENDA(ID INTEGER PRIMARY KEY, NAME TEXT NOT NULL, GENDER TEXT NOT NULL)";
+    private static final String CREATE_TABLE_PEOPLE = "CREATE TABLE PEOPLE(ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL, FANTASYNAME TEXT, GENDER TEXT NOT NULL, FATHER TEXT, MOTHER TEXT, INCOME )";
 
-    public DBHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public DBHelper(@Nullable Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        sqLiteDatabase.execSQL(CREATE_TABLE_PEOPLE);
     }
 
     @Override
