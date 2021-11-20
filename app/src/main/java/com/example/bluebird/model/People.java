@@ -2,7 +2,7 @@ package com.example.bluebird.model;
 
 import java.io.Serializable;
 
-public class Pessoa implements Serializable {
+public class People implements Serializable {
     private int id;
     private String name;
     private String fantasyName;
@@ -11,7 +11,7 @@ public class Pessoa implements Serializable {
     private String mother;
     private double income;
 
-    public Pessoa(int id, String name, String fantasyName, String gender, String father, String mother, double income) {
+    public People(int id, String name, String fantasyName, String gender, String father, String mother, double income) {
         this.id = id;
         this.name = name;
         this.fantasyName = fantasyName;
